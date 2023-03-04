@@ -1,4 +1,173 @@
+/*Estilos Generales*/
 *{
     margin: 0;
     padding: 0;
+}
+
+:root{
+    --neon-border-color: #08f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Estilos Barra de Navegación*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10% 0 10%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: 0.8s;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-list {
+    float: left;
+    width: 33.33%;
+}
+
+.navbar-item-link {
+    display: block;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.navbar-item-link:hover {
+    color: gray;
+    background-color: black;
+}
+
+/*Estilos Header*/
+.header {
+    background-image: url("../multimedia/img/bg-main.webp");
+    background-size: contain;
+    background-position: center;
+    padding: 30% 20px;
+    text-align: center;
+    color: black;
+    width: 100%;
+    height: 400px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+#h1-little{
+    font-size: 1.5em;
+}
+
+/*Estilos Estructura Principal*/
+.container-menu{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+#bg-img-menu{
+    background-image: url("../multimedia/img/fondo-web.jpg");
+    background-size: cover;
+    padding: 35% 20px;
+}
+
+.h3-custom{
+    padding-top: 10% 20px;
+}
+
+/*Estilos Caja Donde Encontrarnos*/
+.box-map{
+    background-image: url("../multimedia/img/fondo-web.jpg");
+    background-size: cover;
+}
+
+.box-map h3{
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.box-map-size{
+    width: 100%;
+    height: 100%;
+}
+
+.class-maps{
+    width: 90%;
+    height: 343px;
+}
+
+/*Estilos animación Neon*/
+.neon-border-container{
+    border: 3px solid var(--neon-border-color);
+    animation: flicker 5s infinite alternate;
+    padding: 1.5em;
+    color: #fff;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    box-shadow:
+        0 0 .5rem #fff,
+        inset 0 0 .5rem #fff,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+/*Estilos Botones Neon*/
+.btn-neon{
+    background-color: transparent;
+    color: var(--neon-border-color);
+    padding: 0.5em;
+    width: 50%;
+    box-shadow: 0 0 7px 0 var(--neon-border-color),
+	    0 0 5px 2px var(--neon-border-color),
+		inset 0 0 7px 0 var(--neon-border-color),
+		inset 0 0 5px 2px var(--neon-border-color);
+	transition: background 2s ease,	box-shadow 0.15s ease 0.03s;
+}
+.btn-neon:hover{
+    background-color: rgb(180, 180, 248);
+    color: black;
+}
+
+/*Estilos Quienes Somos*/
+.container-description{
+    width: 100%;
+    height: 400px;
+    background-image: url("../multimedia/img/fondo-web.jpg");
+    background-size: cover;
+    padding-top: 1em;
+}
+
+.h1-justify{
+    text-align: center;
+    color: white;
+}
+
+.desccription-text{
+    color: white;
+    text-align: justify;
+    font-size: 1.2em;
+    letter-spacing: normal;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
 }
