@@ -296,6 +296,41 @@ ul {
     margin-top: 0.5em;
 }
 
+/*Estilos Page Contacto*/
+.faqs{
+    padding: 10px 20px 20px;
+    width: 100%;
+    height: 450px;
+}
+
+::-webkit-details-marker{
+    float: right;
+    margin-top: 5px;
+}
+
+.contact-card{
+    background: #f6f6f6;
+    padding: 15px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family: "Rubik";
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.visible-card{
+    outline: none;
+}
+
+.card-text{
+    font-size: 0.9em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 0.5em;
+    text-align: justify;
+}
+
 /*Estilos Medium*/
 @media(min-width:768px){
     .header {
