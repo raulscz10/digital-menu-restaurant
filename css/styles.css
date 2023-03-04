@@ -5,11 +5,17 @@
 }
 
 :root{
-    --neon-border-color: #08f;
+    --neon-border-color: #cc0000;
+    --neon-border-color-pink: #c90076;
+    --neon-border-color-blue: #00ffea;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.main-container{
+    padding: 0;
 }
 
 /*Estilos Barra de Navegación*/
@@ -44,74 +50,103 @@ ul {
 }
 
 .navbar-item-link:hover {
-    color: gray;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 
 /*Estilos Header*/
 .header {
-    background-image: url("../multimedia/img/bg-main.webp");
-    background-size: contain;
-    background-position: center;
-    padding: 30% 20px;
+    background-color: black;
+    padding: 20% 20px;
     text-align: center;
     color: black;
     width: 100%;
     height: 400px;
 }
 
-.header h1 {
+.diner {
+    font-size: 3.5em;
+    font-family: 'Fredoka One', serif;
+    display: block;
+    color: transparent;
+    paint-order: fill stroke markers;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #fed128;
+    text-shadow: 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 0.4vw #fed128;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+
+  .faulty-letter {
+    -webkit-text-stroke-color: #444444;
+    text-shadow: 0 0 1vw #222222, 0 0 1vw #222222, 0 0 1vw #222222, 0 0 0.2vw #444444;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: 9999;
+  }
+
+  .welcome {
+    display: block;
+    color: #28d7fe;
     font-size: 2.5em;
-    color: white;
-}
+    font-family: "Pacifico", "Parisienne", serif;
+    text-shadow: 0 0 3vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff, 0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe;
+    font-weight: normal;
+  }
 
-#h1-little{
-    font-size: 1.5em;
-}
+  @keyframes blink {
+    from,
+    38%,
+    43.25%,
+    49.5%,
+    51.125%,
+    to {
+      -webkit-text-stroke-color: #444444;
+    text-shadow: 0 0 1vw #222222, 0 0 1vw #222222, 0 0 1vw #222222, 0 0 0.2vw #444444;
+    }
 
-/*Estilos Estructura Principal*/
+    38.5%,
+    43%,
+    50%,
+    51% {
+      -webkit-text-stroke-color: #fed128;
+    text-shadow: 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 0.4vw #fed128;
+    }
+  }
+
+/*Estilos Descubre nuestro menú*/
 .container-menu{
     width: 100%;
     height: 400px;
     text-align: center;
+    margin-top: 0.5em;
 }
 
-#bg-img-menu{
-    background-image: url("../multimedia/img/fondo-web.jpg");
-    background-size: cover;
+#custom-styles-box{
     padding: 35% 20px;
+    background-color: black;
 }
 
 .h3-custom{
     padding-top: 10% 20px;
 }
 
-/*Estilos Caja Donde Encontrarnos*/
-.box-map{
-    background-image: url("../multimedia/img/fondo-web.jpg");
-    background-size: cover;
-}
-
-.box-map h3{
-    color: #fff;
-    margin-bottom: 1em;
-}
-
-.box-map-size{
-    width: 100%;
+.box-img-menu{
     height: 100%;
-}
-
-.class-maps{
-    width: 90%;
-    height: 343px;
+    background-image: url("../multimedia/img/coctails.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
 }
 
 /*Estilos animación Neon*/
 .neon-border-container{
+    background-color: black;
     border: 3px solid var(--neon-border-color);
     animation: flicker 5s infinite alternate;
-    padding: 1.5em;
+    padding: 1em;
     color: #fff;
 }
 
@@ -149,25 +184,120 @@ ul {
     color: black;
 }
 
-/*Estilos Quienes Somos*/
-.container-description{
-    width: 100%;
-    height: 400px;
-    background-image: url("../multimedia/img/fondo-web.jpg");
+/*Estilos Caja Donde Encontrarnos*/
+.box-img-maps{
+    height: 100%;
+    background-image: url("../multimedia/img/mapas.jpeg");
     background-size: cover;
-    padding-top: 1em;
-}
-
-.h1-justify{
-    text-align: center;
-    color: white;
-}
-
-.desccription-text{
-    color: white;
-    text-align: justify;
-    font-size: 1.2em;
-    letter-spacing: normal;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-right: 0.5em;
     margin-left: 0.5em;
 }
+
+.neon-border-maps-container{
+    border: 3px solid var(--neon-border-color-pink);
+    animation:  maps-flicker 5s infinite alternate;
+    padding: 1em;
+    color: #fff;
+}
+
+@keyframes maps-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    box-shadow:
+        0 0 .5rem #fff,
+        inset 0 0 .5rem #fff,
+        0 0 2rem var(--neon-border-color-pink),
+        inset 0 0 2rem var(--neon-border-color-pink),
+        0 0 4rem var(--neon-border-color-pink),
+        inset 0 0 4rem var(--neon-border-color-pink);
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.btn-neon-pink{
+    background-color: transparent;
+    color: var(--neon-border-color-pink);
+    padding: 0.5em;
+    width: 50%;
+    box-shadow: 0 0 7px 0 var(--neon-border-color-pink),
+	    0 0 5px 2px var(--neon-border-color-pink),
+		inset 0 0 7px 0 var(--neon-border-color-pink),
+		inset 0 0 5px 2px var(--neon-border-color-pink);
+	transition: background 2s ease,	box-shadow 0.15s ease 0.03s;
+}
+.btn-neon-pink:hover{
+    background-color: rgb(180, 180, 248);
+    color: black;
+}
+
+/*Estilos Quienes Somos*/
+.box-img-aboutus{
+    height: 100%;
+    background-image: url("../multimedia/img/aboutus.webp");
+    background-size: cover;
+    background-position-x: center;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.neon-border-aboutus-container{
+    border: 3px solid var(--neon-border-color-blue);
+    animation:  aboutus-flicker 5s infinite alternate;
+    padding: 1em;
+    color: #fff;
+}
+
+@keyframes aboutus-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    box-shadow:
+        0 0 .5rem #fff,
+        inset 0 0 .5rem #fff,
+        0 0 2rem var(--neon-border-color-blue),
+        inset 0 0 2rem var(--neon-border-color-blue),
+        0 0 4rem var(--neon-border-color-blue),
+        inset 0 0 4rem var(--neon-border-color-blue);
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+/*Estilos Footer*/
+.logo-box{
+    margin-top: 0.5em;
+    width: 100%;
+    height: 300px;
+    display: none;
+}
+
+.footer-logo{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-content{
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-content p{
+    font-weight: bold;
+    padding: 1em;
+    margin-top: 0.5em;
+}
+
+/*Estilos Medium*/
+@media(min-width:768px){
+    
+}
+
+/*Estilos Large*/
