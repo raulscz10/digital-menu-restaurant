@@ -16,6 +16,7 @@ html {
 
 .main-container{
     padding: 0;
+    background-image: url(../multimedia/img/fondo-web.jpg);
 }
 
 /*Estilos Barra de Navegación*/
@@ -56,12 +57,13 @@ ul {
 
 /*Estilos Header*/
 .header {
-    background-color: black;
-    padding: 20% 20px;
+    background-color: transparent;
+    padding: 30% 5px;
     text-align: center;
     color: black;
     width: 100%;
     height: 400px;
+    border: 2px solid white;
 }
 
 .diner {
@@ -123,8 +125,7 @@ ul {
 }
 
 #custom-styles-box{
-    padding: 35% 20px;
-    background-color: black;
+    padding: 20% 20px;
 }
 
 .h3-custom{
@@ -139,6 +140,7 @@ ul {
     background-position: center;
     margin-right: 0.5em;
     margin-left: 0.5em;
+    border: 2px solid white;
 }
 
 /*Estilos animación Neon*/
@@ -170,7 +172,7 @@ ul {
 /*Estilos Botones Neon*/
 .btn-neon{
     background-color: transparent;
-    color: var(--neon-border-color);
+    color: white;
     padding: 0.5em;
     width: 50%;
     box-shadow: 0 0 7px 0 var(--neon-border-color),
@@ -180,8 +182,10 @@ ul {
 	transition: background 2s ease,	box-shadow 0.15s ease 0.03s;
 }
 .btn-neon:hover{
-    background-color: rgb(180, 180, 248);
+    background-color: rgb(252, 124, 124);
     color: black;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 /*Estilos Caja Donde Encontrarnos*/
@@ -193,9 +197,11 @@ ul {
     background-position: center;
     margin-right: 0.5em;
     margin-left: 0.5em;
+    border: 2px solid white;
 }
 
 .neon-border-maps-container{
+    background-color: black;
     border: 3px solid var(--neon-border-color-pink);
     animation:  maps-flicker 5s infinite alternate;
     padding: 1em;
@@ -221,7 +227,7 @@ ul {
 
 .btn-neon-pink{
     background-color: transparent;
-    color: var(--neon-border-color-pink);
+    color: white;
     padding: 0.5em;
     width: 50%;
     box-shadow: 0 0 7px 0 var(--neon-border-color-pink),
@@ -231,8 +237,10 @@ ul {
 	transition: background 2s ease,	box-shadow 0.15s ease 0.03s;
 }
 .btn-neon-pink:hover{
-    background-color: rgb(180, 180, 248);
+    background-color: rgb(235, 124, 252);
     color: black;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 /*Estilos Quienes Somos*/
@@ -244,9 +252,11 @@ ul {
     margin-top: 0.5em;
     margin-right: 0.5em;
     margin-left: 0.5em;
+    border: 2px solid white;
 }
 
 .neon-border-aboutus-container{
+    background-color: black;
     border: 3px solid var(--neon-border-color-blue);
     animation:  aboutus-flicker 5s infinite alternate;
     padding: 1em;
@@ -271,25 +281,16 @@ ul {
 }
 
 /*Estilos Footer*/
-.logo-box{
-    margin-top: 0.5em;
-    width: 100%;
-    height: 300px;
-    display: none;
-}
 
-.footer-logo{
-    width: 100%;
-    height: 100%;
-}
 
 .footer-content{
-    background-color: aqua;
+    background-color: black;
     width: 100%;
     height: 100%;
 }
 
 .footer-content p{
+    color: white;
     font-weight: bold;
     padding: 1em;
     margin-top: 0.5em;
@@ -297,7 +298,13 @@ ul {
 
 /*Estilos Medium*/
 @media(min-width:768px){
-    
+    .header {
+        padding: 10% 20px;
+        width: 100%;
+        height: 400px;
+    }
+    .footer-content p{
+        text-align: center;
+    }
 }
-
 /*Estilos Large*/
