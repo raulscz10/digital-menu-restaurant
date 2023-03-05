@@ -337,6 +337,68 @@ ul {
     text-align: justify;
 }
 
+/*Estilos Carta*/
+.my-col{
+    width: 100%;
+    height: 450px;
+}
+
+.title-food{
+    color: white;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.card-food{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin: 0.6em;
+    transition: transform .2s;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.card-food:hover{
+    transform: scale(1.1);
+    background-color: #7e7e7e;
+}
+
+#margin-custom{
+    margin-left: -0.3em;
+}
+
+.section-img{
+    height: 100%;
+    width: 30%;
+    padding: 0.1em;
+    border-right: 2px solid white;
+}
+
+.img-food{
+    width: 100%;
+    height: 100%;
+}
+
+.section-text{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+.section-price{
+    height: 100%;
+    width: 10%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-left: 2px solid white;
+}
+
 /*Estilos Medium*/
 @media(min-width:768px){
     .header {
